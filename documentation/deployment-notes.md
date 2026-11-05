@@ -17,7 +17,7 @@ Module 03 - Cloud Services & Web App Deployment
 - Access Protocol: HTTP
 
 ## Website
-http://54.242.159.110
+http://34.203.13.243
 
 ## Verification
 - Nginx service checked
