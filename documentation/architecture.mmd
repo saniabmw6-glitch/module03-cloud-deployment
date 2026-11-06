@@ -1,0 +1,23 @@
+flowchart TD
+    U[User] --> I[Internet]
+    I --> IGW[Internet Gateway]
+    IGW --> SG[Security Group]
+    SG --> EC2[EC2 Ubuntu Instance]
+
+    EC2 --> N[Nginx Reverse Proxy]
+    N --> F[Flask Application]
+
+    F --> S3[Private S3 Bucket]
+    F --> SSM[SSM Parameter Store]
+    SSM -. Secure Parameter .-> F
+
+    IAM[IAM Role] -. Attached to .-> EC2
+
+    EC2 --> CW[CloudWatch]
+    N --> LOG[Nginx Access and Error Logs]
+    F --> J[Systemd Journal Logs]
+    LOG --> CW
+    J --> CW
+
+    DDB[DynamoDB Messages Table]
+    NOTE[Explored AWS Resource] -.-> DDB

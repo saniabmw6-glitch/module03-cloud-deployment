@@ -1,38 +1,47 @@
 # AWS Cloud Deployment Project
 
 ## Overview
-A beginner-friendly cloud deployment project developed
-as part of Module 03: Cloud Services & Web App Deployment.
+A cloud-based web application deployment project developed as part of Module 03: Cloud Services & Web App Deployment.
 
 ## Technologies
 - AWS EC2
+- AWS IAM
+- AWS S3
+- AWS Systems Manager Parameter Store
+- AWS CloudWatch
 - Nginx
-- HTML
-- Git
-- GitHub
-- Linux (Ubuntu)
+- Python Flask
+- Linux Ubuntu
+- Git and GitHub
 
-## Project Structure
+## Key Features
+- Web application deployed on AWS EC2.
+- Nginx configured as a reverse proxy.
+- Flask backend API.
+- Secure configuration using AWS Systems Manager Parameter Store.
+- S3 integration for visit counter storage.
+- IAM role-based access.
+- Application logging and monitoring.
 
-module03-cloud-deployment/
-├── app/
-│   └── index.html
-├── documentation/
-├── screenshots/
-├── .gitignore
-└── README.md
+## Architecture
+See [Architecture Diagram Source](documentation/architecture.mmd).
 
-## Current Progress
-- EC2 instance inspected
-- Nginx configuration verified
-- HTML application created
-- Git repository initialized
+## Security
+- IAM role instead of hardcoded AWS credentials.
+- Least-privilege permissions.
+- Private S3 bucket.
+- Sensitive files excluded from Git.
 
-## Deployment
-The application will be deployed using AWS EC2 and Nginx.
+## API Endpoint
+`/api/status`
 
-## Learning Objectives
-- Understand AWS cloud services
-- Explore cloud security
-- Deploy a web application
-- Configure web server networking
+## Learning Outcomes
+- AWS cloud deployment
+- Linux administration
+- Nginx configuration
+- Flask deployment
+- IAM and cloud security
+- AWS monitoring and logging
+
+## Author
+Sania Chaudhary
