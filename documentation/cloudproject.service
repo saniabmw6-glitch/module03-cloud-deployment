@@ -1,0 +1,13 @@
+[Unit]
+Description=Cloud Project Flask App
+After=network.target
+
+[Service]
+User=ubuntu
+WorkingDirectory=/home/ubuntu/cloud-project
+EnvironmentFile=/etc/cloudproject.env
+ExecStart=/usr/bin/python3 /home/ubuntu/cloud-project/app.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
