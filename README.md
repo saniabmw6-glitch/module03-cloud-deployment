@@ -22,6 +22,9 @@ A cloud-based web application deployment project developed as part of Module 03:
 - S3 integration for visit counter storage.
 - IAM role-based access.
 - Application logging and monitoring.
+  ## 🌐 Live Website Preview
+
+![Cloud Deployment Project](screenshots/website.png)
 
 ## Architecture
 See [Architecture Diagram Source](documentation/architecture.mmd).
